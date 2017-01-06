@@ -8,7 +8,7 @@
  * 	2. Runnable - when the start method has being called on the thread object the thread is know be in a runnable state
  * 	3. Running - when the thread has been giving priority by the scheduler and is executing
  * 	4. Blocked - when the thread cannot execute because of a pending requirement has not yet been met
- *  5. Dead - when the run() method has completed the Thread is known to be in a dead state and cannot be called again for execution
+ *  5.   Dead - when the run() method has completed the Thread is known to be in a dead state and cannot be called again for execution
  */
 
 package com.threads;
