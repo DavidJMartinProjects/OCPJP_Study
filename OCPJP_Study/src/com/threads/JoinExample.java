@@ -23,7 +23,7 @@ public class JoinExample {
 class RunnableOne implements Runnable { // implement the Runnable interface
 	public void run() { // override the run method from the Runnable interface
 		for(int i=0; i<5; i++) {
-			System.out.println(Thread.currentThread().getName() + " - Count : " +i); // print thread name and a count variable
+			System.out.println(Thread.currentThread().getName() + " - Count : " +i); // print thread name and a count variable 
 		}
 	}
 }
