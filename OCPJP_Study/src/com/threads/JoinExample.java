@@ -1,3 +1,5 @@
+// This program demonstrates the use of the join method - allowing one thread to complete execution before another thread begins execution
+
 package com.threads;
 
 public class JoinExample {
