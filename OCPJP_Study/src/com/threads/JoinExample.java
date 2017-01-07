@@ -16,22 +16,26 @@ public class JoinExample {
 			e.printStackTrace();
 		}
 		
-		t2.start(); // start t2 thread		
+		t2.start(); // start t2 thread	
 	}
 }
 
 class RunnableOne implements Runnable { // implement the Runnable interface
 	public void run() { // override the run method from the Runnable interface
+		System.out.println(Thread.currentThread().getName() + " has begun execution.");	
 		for(int i=0; i<5; i++) {
-			System.out.println(Thread.currentThread().getName() + " - Count : " +i); // print thread name and a count variable 
+			System.out.println(Thread.currentThread().getName() + " - Count : " +i); // print thread name and a count variable
 		}
+		System.out.println(Thread.currentThread().getName() + " has finished execution. \n");		
 	}
 }
 
 class RunnableTwo implements Runnable { // implement the Runnable interface
 	public void run() { // override the run method from the Runnable interface
+		System.out.println(Thread.currentThread().getName() + " has begun execution.");	
 		for(int k=0; k<5; k++) {
 			System.out.println(Thread.currentThread().getName() + " - Count : " +k); // print thread name and a count variable
-		} 
+		}
+		System.out.println(Thread.currentThread().getName() + " has finished execution. \n");
 	}
 }
